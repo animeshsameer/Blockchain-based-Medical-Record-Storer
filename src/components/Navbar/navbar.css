@@ -1,0 +1,107 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937; /* Dark blue-gray */
+    padding: 1rem 2rem;
+    color: #f9fafb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav__name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav__name h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #38bdf8; /* Tailwind's sky-400 */
+  }
+  
+  .nav__networkSelector select {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #374151;
+    color: white;
+    border: 1px solid #4b5563;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav__networkSelector select:hover {
+    border-color: #38bdf8;
+  }
+  
+  .nav__balance {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav__myBalance {
+    font-size: 0.9rem;
+    color: #9ca3af; /* Cool gray */
+  }
+  
+  .nav__myAccount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #374151;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav__balance-box {
+    padding: 6px 12px;
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .nav__balance-box:hover {
+    background-color: #0ea5e9;
+  }
+  
+  .nav__auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav__link {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: #38bdf8;
+  }
+  
+  .nav__logout {
+    padding: 6px 12px;
+    background-color: #ef4444; /* Red-500 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .nav__logout:hover {
+    background-color: #dc2626;
+  }
+  

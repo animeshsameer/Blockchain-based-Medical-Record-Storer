@@ -1,0 +1,108 @@
+/* src/styles/AuthForm.css */
+
+.auth-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .auth-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+  }
+  
+  .auth-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    color: #ffffff;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form input::placeholder {
+    color: #ccc;
+  }
+  
+  .auth-form input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #5b548a, #00feba);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive tweak */
+  @media (max-width: 500px) {
+    .auth-form {
+      padding: 30px 25px;
+    }
+  
+    .auth-form h2 {
+      font-size: 24px;
+    }
+  }
+  
